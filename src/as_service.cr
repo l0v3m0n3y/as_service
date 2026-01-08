@@ -17,7 +17,7 @@ class AsService
     JSON.parse(HTTP::Client.get("#{API_YES}/yes", headers: @headers).body)
   end
 
-  def yes_as_service() : JSON::Any
+  def no_as_service() : JSON::Any
     JSON.parse(HTTP::Client.get("#{API_NO}/no", headers: @headers).body)
   end
 
